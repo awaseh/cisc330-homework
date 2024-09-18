@@ -1,0 +1,26 @@
+Abdul Waseh
+CISC 3300 SP24
+Homework 1
+
+1. What is HTML? What does it do?
+    HTML provides the structure for web pages by defining elements such as headings, paragraphs, and links, allowing browsers to display content.
+
+2. What is CSS? What does it do?
+    CSS is used to style web pages by applying rules that control how HTML elements are displayed, such as colors, fonts, and layout​.
+
+3. Access https://www.fordham.edu/. In your own words, describe how this webpage uses
+structure to convey meaning and navigation options to the user.
+    The webpage uses headings, navigation bars, and organized sections to clearly guide users through available resources, such as academics, admissions, and campus life, making navigation intuitive.
+4. What is an HTML element? Tag? Attribute?
+    An HTML element is a component of the webpage structure whether it is a paragraph or a type of heading, a tag is the markup used to define an element such as <p> for paragraphs, and an attribute provides additional information about an element like src for images
+5. What are the parts of a CSS rule?
+    A CSS rule consists of a selector and a declaration. The selector identifies which HTML elements to style, and the declaration contains properties and values enclosed in curly brackets.
+6. Explain how CSS rules cascade.
+    CSS rules cascade based on specificity, inheritance, and the order in which rules are applied, with more specific rules, inherited styles, and later rules taking precedence unless overridden by the important flag (which we shoudn't use).
+7. If you have a directory called project-1 that contains two subdirectories, html-files and
+images. In the html-files directory you have an HTML file called html-1.html that has an
+img element with a src attribute, write out the value of the src attribute to access an
+image file called pinecone.jpg in the images directory.
+    ../images/pinecone.jpg: where .. moves up 1 directory level to project-1, /images then moves into the image directory, an dthen /pinecone.jpg chooses the specific file that will be used.
+8. What is the default behavior when submitting a HTML form?
+    The default behavior when submitting an HTML form is to send the form data to the url specified in the action attribute using the http verb defined, causing the page to reload after submitting.
