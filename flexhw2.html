@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Flex Container Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        .item1 { background-color: #ff6b6b; }
+        .item2 { background-color: #4ecdc4; }
+        .item3 { background-color: #45b7d1; }
+
+        @media (min-width: 500px) {
+            .flex-container {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item1"></div>
+        <div class="flex-item item2"></div>
+        <div class="flex-item item3"></div>
+    </div>
+</body>
+</html>
