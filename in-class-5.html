@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Interactive Webpage</title>
+    <style>
+        .container-color {
+            color: blue;
+        }
+    </style>
+    <script>
+        window.addEventListener('load', function(e) {}) {
+            const containerDiv = document.getElementById("container");
+            const textNode = document.createTextNode("in class 5");
+            containerDiv.appendChild(textNode);
+            containerDiv.classList.add("container-color");
+
+            const buttonElement = document.getElementById("event-button");
+            buttonElement.addEventListener("click", function() {
+                const appendDiv = document.createElement("div");
+                const appendDivText = document.createTextNode("new text");
+                appendDiv.appendChild(appendDivText);
+                containerDiv.appendChild(appendDiv);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="event-button">click me</button>
+</body>
+</html>

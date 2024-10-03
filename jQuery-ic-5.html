@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Interactive Webpage with jQuery</title>
+    <style>
+        .container-color 
+        {
+            color: blue;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() 
+        {
+            // Question 9
+            $('#container').text("in class 5").attr('class', 'container-color');
+
+            // Question 10
+            $('#event-button').on('click', function() 
+            {
+                $('#container').append("<div>new text</div>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="event-button">click me</button>
+</body>
+</html>
