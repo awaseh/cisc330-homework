@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Recipes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Recipe Fetcher</h1>
+    <p>Check the console for the fetched recipes.</p>
+
+    <script>
+        $.ajax({
+            url: 'http://localhost:3000/recipes',
+            method: 'GET',
+            success: function(data) {
+                console.log('Recipes fetched using $.ajax:', data);
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching recipes:', error);
+            }
+        });
+    </script>
+</body>
+</html>
