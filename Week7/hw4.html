@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+    <title>Interactive Lists and Form</title>
+    <style>
+        .blue-text 
+        {
+            color: blue;
+        }
+        .error-message 
+        {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .success-message 
+        {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive List</h1>
+    
+    <h2>Original List</h2>
+    <ul id="myList">
+        <li>Thing 1</li>
+        <li>Thing 2</li>
+        <li>Thing 3</li>
+        <li>Thing 4</li>
+        <li>Thing 5</li>
+    </ul>
+
+    <h2>Cats List</h2>
+    <ul id="cats-list">
+    </ul>
+
+    <h2>Hopefully Working Form</h2>
+    <form id="myForm">
+        <label for="myInput">Enter a value:</label>
+        <input type="text" id="myInput" name="myInput">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="message"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            const list = document.getElementById('myList');
+            const listItems = list.getElementsByTagName('li');
+
+            function changeColor() {
+                for (let item of listItems) {
+                    item.classList.add('blue-text');
+                }
+            }
+
+            for (let item of listItems) {
+                item.addEventListener('click', changeColor);
+            }
+
+           
+            const cats = [
+                { name: 'Charlie', adoptionStatus: 'available' },
+                { name: 'Lily', adoptionStatus: 'not-available' },
+                { name: 'Coco', adoptionStatus: 'available' },
+                { name: 'Oreo', adoptionStatus: 'not-available' },
+                { name: 'Luna', adoptionStatus: 'available' },
+                { name: 'Milo', adoptionStatus: 'available' },
+                { name: 'Lola', adoptionStatus: 'not-available' },
+                { name: 'Leo', adoptionStatus: 'available' },
+                { name: 'Willow', adoptionStatus: 'available' },
+                { name: 'Bella', adoptionStatus: 'not-available' },
+                { name: 'Max', adoptionStatus: 'available' },
+                { name: 'Cleo', adoptionStatus: 'available' },
+                { name: 'Lucy', adoptionStatus: 'not-available' },
+                { name: 'Daisy', adoptionStatus: 'available' },
+            ];
+            const cat = {name:"Pinecone", age:13, type:'Munchkin', cuteness: 9001};
+
+            const catsList = document.getElementById('cats-list');
+
+            cats.forEach(cat => 
+            {
+                const li = document.createElement('li');
+                li.textContent = cat.name;
+                catsList.appendChild(li);
+            });
+
+    
+            const form = document.getElementById('myForm');
+            const input = document.getElementById('myInput');
+            const messageDiv = document.getElementById('message');
+
+            form.addEventListener('submit', function(event) 
+            {
+                event.preventDefault();
+                const inputValue = input.value.trim();
+                
+                console.log(inputValue);
+
+                messageDiv.innerHTML = '';
+                messageDiv.className = '';
+
+                if (inputValue === '') {
+                    messageDiv.textContent = 'Please Provide a Value';
+                    messageDiv.className = 'error-message';
+                } else {
+                    messageDiv.textContent = 'Success';
+                    messageDiv.className = 'success-message';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

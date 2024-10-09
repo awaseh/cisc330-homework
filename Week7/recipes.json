@@ -1,0 +1,29 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Spaghetti Carbonara",
+        "description": "A classic Italian pasta dish with eggs, cheese, pancetta, and black pepper."
+      },
+      {
+        "id": 2,
+        "title": "Chicken Tikka Masala",
+        "description": "Grilled chicken chunks in a creamy and spicy tomato-based sauce, perfect with rice or naan."
+      },
+      {
+        "id": 3,
+        "title": "Vegetarian Quinoa Bowl",
+        "description": "A healthy bowl filled with quinoa, roasted vegetables, and a tangy dressing."
+      },
+      {
+        "id": 4,
+        "title": "Classic Beef Burger",
+        "description": "Juicy beef patty on a toasted bun with lettuce, tomato, cheese, and special sauce."
+      },
+      {
+        "id": 5,
+        "title": "Chocolate Chip Cookies",
+        "description": "Soft and chewy cookies loaded with chocolate chips, a perfect sweet treat."
+      }
+    ]
+  }

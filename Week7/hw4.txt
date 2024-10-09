@@ -1,0 +1,11 @@
+HW4 Abdul Waseh
+
+1. The DOM is how browsers show a web page. It's like a tree of parts that make up the page. The DOM tree has different pieces like the whole document, elements, attributes, and text.
+
+2. An XSS attack is when bad people put harmful code in a website. This can happen if user input is shown as HTML. To stop this, be careful with user input. Don't show it as HTML if you can avoid it. If you must, check it carefully first.
+
+3. An event in JavaScript is something that happens on a web page. It could be a click, a page loading, or typing. Events let us make web pages that respond to what users do.
+
+4. An event listener waits for something to happen. When it does, it runs some code. You tell it what to listen for, like a click. You also tell it what to do when that happens.
+
+5. jQuery is a tool that makes JavaScript easier to use. It helps with common tasks on web pages. To use jQuery, you add a special link to your web page. This link gets jQuery from the internet so you can use it.
