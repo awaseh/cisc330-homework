@@ -1,0 +1,19 @@
+
+1. HTTP (Hyper Text Transfer Protocol) is the foundation for data exchange on the Web, handling communication between clients and servers through requests and responses. Common HTTP request methods include:
+   - GET: Retrieves data only
+   - POST: Submits data to a resource, often creating new resources
+   - PUT: Replaces all representations of a target resource
+   - PATCH: Partially modifies a resource
+   - DELETE: Deletes a resource
+
+2. An API (Application Programming Interface) is a way for computer programs or components to communicate with each other. JSON (JavaScript Object Notation) is a human-readable text format used to store and transmit data objects consisting of attribute-value pairs and arrays.
+
+3. AJAX (Asynchronous JavaScript And XML) allows web pages to be updated asynchronously by exchanging data with a web server without reloading the entire page. Asynchronous code refers to code blocks that can execute at a future point in time without blocking the execution of other code.
+
+4. REST is an architectural style for organizing code so that requests act upon resources in a standardized way. Resources are any information that can be named. For a RESTful application with "posts":
+   a. Retrieve multiple posts: GET /posts
+   b. Retrieve a single post: GET /posts/{id}
+   c. Save a post: POST /posts
+   d. Update a post: PUT /posts/{id} or PATCH /posts/{id}
+
+5. Hoisting refers to the behavior where variable and function declarations are moved to the top of their respective scopes during the compilation phase, before code execution. Closures are the ability of a function to remember and access variables and functions declared in its outer scope, even after the outer function has returned.
