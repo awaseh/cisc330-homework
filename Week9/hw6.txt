@@ -1,0 +1,15 @@
+
+1. PHP is an interpreted programming language used to build webpages, present on 79.2% of all websites. As a server-side language, it processes user input and interacts with other servers.
+
+2. PHP and JavaScript are similar in that both are dynamic and weakly typed languages. The main difference in syntax is that PHP uses periods for string concatenation while JavaScript uses plus signs, and PHP requires semicolons more strictly than JavaScript.
+
+3. PHP is chosen because it's the most opinionated scripting language for web development and has several useful built-in functionalities (though the PDF doesn't specify what these functionalities are).
+
+4. Include and require both copy code from specified files into the current file, but they differ in error handling:
+- Include will throw an error but continue executing if the file isn't found
+- Require will stop execution if the file isn't found
+If you try to use a variable from a file that hasn't been included yet, it won't be accessible since it hasn't been imported into the current scope.
+
+5. 
+- echo is used to output text
+- var_dump dumps information about variables, including their type and value, and can print out non-primitive values
