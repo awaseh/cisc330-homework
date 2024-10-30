@@ -1,0 +1,11 @@
+Abdul Waseh 
+
+1. A class is a template/blueprint for creating objects that defines properties and methods. An object is an instance of a class containing actual data. OOP (Object-Oriented Programming) is a programming paradigm that organizes code into objects containing data and behavior.
+
+2. Abstract classes are used when you want to provide a common interface and some default functionality, but leave certain implementation details to child classes. They serve as templates that can't be instantiated directly but must be extended by other classes.
+
+3. Superglobals in PHP are predefined variables accessible everywhere in a script without needing declaration. Examples: $_SERVER (provides server/request info like REQUEST_URI and REQUEST_METHOD), and $_POST (contains POST request data).
+
+4. Two steps for namespaces: 1) Define the namespace in the class you want to use with the namespace keyword. 2) Either use the full namespace path when instantiating the class OR import it with the 'use' keyword.
+
+5. MVC (Model-View-Controller) is an architectural pattern that separates applications into three components: Model (handles data and business logic), View (handles UI/presentation), and Controller (acts as intermediary between Model and View, processes requests and manages application flow).
