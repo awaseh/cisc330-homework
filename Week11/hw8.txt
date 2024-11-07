@@ -1,0 +1,31 @@
+Hw8
+1. Query string example: 
+`www.example.com?query=database+tools&star_rating=4`
+- Query strings start after ? and contain key-value pairs
+- Multiple parameters are separated by &
+- = separates each key and value
+
+2. Escaping characters means:
+- Removing/replacing characters that could behave like code
+- Converting HTML reserved characters to their entity values (like < becomes &lt;)
+- Prevents malicious code (XSS attacks) by treating special characters as literal text
+
+3. HTTP Status codes (most common):
+- 200: OK - Request was successful
+- 400: Bad Request - Server cannot understand the request
+- 401: Unauthorized - Authentication is required
+- 403: Forbidden - No access rights to content
+- 404: Not Found - Requested resource doesn't exist
+- 500: Internal Server Error - Server encountered an error
+
+4. Data validation is needed to:
+- Ensure data is within acceptable values and right format
+- Prevent malicious code injection
+- Check if required fields are not empty
+- Maintain data integrity and correct data types
+
+5. Sessions and Cookies:
+- Cookies: Text files stored in browser to remember user data, sent with each request to same domain
+- Sessions: Store user information on server for duration of site visit
+- They work together: Cookie contains session ID to access session data on server
+- Help maintain user state since HTTP is stateless
