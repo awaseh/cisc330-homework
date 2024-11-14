@@ -72,26 +72,12 @@ INNER JOIN libraryBook lb ON l.id = lb.libraryID
 INNER JOIN books b ON b.id = lb.bookID
 ORDER BY l.name, b.name;
 
--- Alternative version with additional columns
-SELECT 
-    l.id AS library_id,
-    l.name AS library_name,
-    b.id AS book_id,
-    b.name AS book_name
-FROM library l
-INNER JOIN libraryBook lb ON l.id = lb.libraryID
-INNER JOIN books b ON b.id = lb.bookID
-ORDER BY l.name, b.name;
 
 -- Update a specific book's name using its id
 UPDATE books 
 SET name = 'The Great Gatsby (Updated Edition)'
 WHERE id = 1;
 
--- Alternative version showing how to update using the old name
-UPDATE books
-SET name = 'Pride and Prejudice and Zombies'
-WHERE name = 'Pride and Prejudice';
 
 -- First, delete any references to the book in the libraryBook table
 DELETE FROM libraryBook 
@@ -101,9 +87,3 @@ WHERE bookID = 1;
 DELETE FROM books 
 WHERE id = 1;
 
--- Alternative version using book name (less recommended)
-DELETE FROM libraryBook 
-WHERE bookID IN (SELECT id FROM books WHERE name = 'The Great Gatsby');
-
-DELETE FROM books 
-WHERE name = 'The Great Gatsby';
